@@ -17,7 +17,6 @@ public class Main {
         edileuza.solicitarContaPoupanca(bCaixa);
         russean.solicitarContaCorrente(bCaixa);
 
-
         vinicius.solicitarContaCorrente(bCaixa);
         joao.solicitarContaPoupanca(bBradesco);
 
