@@ -8,7 +8,7 @@ public abstract class Conta implements IConta {
     private final int agencia;
     private final int numero;
     private double saldo;
-    private Cliente cliente;
+    private final Cliente cliente;
     private final Banco banco;
 
     public Conta(Cliente cliente, Banco banco){

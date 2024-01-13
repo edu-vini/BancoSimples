@@ -2,8 +2,6 @@ import com.bancosimples.banco.Banco;
 import com.bancosimples.banco.Cliente;
 import com.bancosimples.banco.contas.Conta;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         Banco bCaixa = new Banco("Caixa");
