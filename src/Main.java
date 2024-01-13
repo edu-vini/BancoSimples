@@ -1,5 +1,6 @@
 import com.bancosimples.banco.Banco;
 import com.bancosimples.banco.Cliente;
+import com.bancosimples.banco.contas.Conta;
 
 import java.util.Arrays;
 
@@ -10,6 +11,14 @@ public class Main {
 
         Cliente vinicius = new Cliente("Vinicius");
         Cliente joao = new Cliente("Joao");
+        Cliente sarah = new Cliente("Sarah");
+        Cliente edileuza = new Cliente("Edileuza");
+        Cliente russean = new Cliente("Russean");
+
+        sarah.solicitarContaPoupanca(bBradesco);
+        edileuza.solicitarContaPoupanca(bCaixa);
+        russean.solicitarContaCorrente(bCaixa);
+
 
         vinicius.solicitarContaCorrente(bCaixa);
         joao.solicitarContaPoupanca(bBradesco);
@@ -26,6 +35,18 @@ public class Main {
 
         System.out.println(vinicius.getContaCorrente());
         System.out.println(joao.getContaPoupanca());
+
+        System.out.println("Quem tem conta na Caixa?");
+
+        for(Conta conta: bCaixa.getContas()){
+            System.out.println(conta.getCliente().getNome());
+        }
+
+        System.out.println("Quem tem conta no Bradesco?");
+
+        for(Conta conta: bBradesco.getContas()){
+            System.out.println(conta.getCliente().getNome());
+        }
 
     }
 }

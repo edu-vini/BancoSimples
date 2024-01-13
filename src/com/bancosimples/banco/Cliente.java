@@ -1,12 +1,11 @@
 package com.bancosimples.banco;
 
 import com.bancosimples.banco.contas.Conta;
-import com.bancosimples.banco.contas.ContaPoupanca;
 import com.bancosimples.exceptions.ClienteJaTemContaCorrenteException;
 import com.bancosimples.exceptions.ClienteJaTemContaPoupancaException;
 
 public class Cliente {
-    private String nome;
+    private final String nome;
     private Conta contaPoupanca;
     private Conta contaCorrente;
 

@@ -5,11 +5,11 @@ import com.bancosimples.banco.Cliente;
 import com.bancosimples.banco.interfaces.IConta;
 
 public abstract class Conta implements IConta {
-    private int agencia;
-    private int numero;
+    private final int agencia;
+    private final int numero;
     private double saldo;
     private Cliente cliente;
-    private Banco banco;
+    private final Banco banco;
 
     public Conta(Cliente cliente, Banco banco){
         this.agencia = banco.AGENCIA;

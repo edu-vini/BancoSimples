@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Banco {
     private final String nome;
-    private List<Conta> contas = new ArrayList<Conta>();
+    private final List<Conta> contas = new ArrayList<Conta>();
     public final int AGENCIA = 1;
     public int CONTADOR_NUMERO_CONTA = 1;
     public Banco(String nome){
